@@ -1,13 +1,12 @@
 {
-  "name": "hello-koa",
+  "name": "url-koa-rewrite",
   "version": "1.0.0",
-  "description": "Hello Koa 2 example with async",
+  "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Michael Lu",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "koa": "^2.4.1",

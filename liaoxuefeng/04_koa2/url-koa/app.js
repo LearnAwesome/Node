@@ -11,12 +11,14 @@ app.use(async (ctx, next) => {
 
 router.get("/hello/:name", async (ctx, next) => {
     const name = ctx.params.name;
-    ctx.response.body = `<h1>${name}</h1>`;
+    ctx.response.body = `<h1>Hello, ${name}!</h1>`;
 });
 
 router.get("/", async (ctx, next) => {
     ctx.response.body = `Index`;
 });
+
+app.use( router.routes() );
 
 app.listen(3000);
 
