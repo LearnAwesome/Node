@@ -25,6 +25,6 @@ const fs = require("fs");
 // ws.end();
 
 // pipe
-const rs = fs.createReadStream("test.json", "utf-8");
-const ws = fs.createWriteStream("output1.json", "utf-8");
-rs.pipe(ws, {end: false}); //相当于克隆rs的文件到ws中
+// const rs = fs.createReadStream("test.json", "utf-8");
+// const ws = fs.createWriteStream("output1.json", "utf-8");
+// rs.pipe(ws, {end: false}); //相当于克隆rs的文件到ws中
