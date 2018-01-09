@@ -1,0 +1,16 @@
+{
+  "name": "09_model-sequelize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node --use_strict ./node_modules/cross-env NODE_ENV=production init-db.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^1.5.1",
+    "sequelize": "^4.29.2"
+  }
+}
