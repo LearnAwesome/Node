@@ -1,8 +1,9 @@
-const model = require('./model');
+const initEnv = require("./env");
+const {Pets, User} = require('./model');
 
-let
-    Pet = model.Pet,
-    User = model.User;
+initEnv("test");
+
+console.log( process.env.NODE_ENV );
 
 (async () => {
     var user = await User.create({
@@ -11,19 +12,20 @@ let
         email: 'john-' + Date.now() + '@garfield.pet',
         passwd: 'hahaha'
     });
-    console.log('created: ' + JSON.stringify(user));
-    var cat = await Pet.create({
-        ownerId: user.id,
-        name: 'Garfield',
-        gender: false,
-        birth: '2007-07-07',
-    });
-    console.log('created: ' + JSON.stringify(cat));
-    var dog = await Pet.create({
-        ownerId: user.id,
-        name: 'Odie',
-        gender: false,
-        birth: '2008-08-08',
-    });
-    console.log('created: ' + JSON.stringify(dog));
+    // console.log('created: ' + JSON.stringify(user));
+    // var cat = await Pets.create({
+    //     ownerId: user.id,
+    //     name: 'Garfield',
+    //     gender: false,
+    //     birth: '2007-07-07',
+    // });
+    // console.log('created: ' + JSON.stringify(cat));
+    // var dog = await Pets.create({
+    //     ownerId: user.id,
+    //     name: 'Odie',
+    //     gender: false,
+    //     birth: '2008-08-08',
+    // });
+    // console.log('created: ' + JSON.stringify(dog));
+    process.exit(0);
 })();
