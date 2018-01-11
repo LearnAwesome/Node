@@ -1,0 +1,16 @@
+{
+  "name": "01_hello-ws",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "pretest": "node app.js",
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^4.0.0"
+  }
+}
