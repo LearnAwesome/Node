@@ -1,0 +1,16 @@
+{
+  "name": "02_hello-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^4.1.0",
+    "mz": "^2.7.0"
+  }
+}
